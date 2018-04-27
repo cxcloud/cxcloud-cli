@@ -1,24 +1,24 @@
 #!/usr/bin/env node
-'use strict';
+"use strict";
 
-const importJsx = require('import-jsx');
-const {h, render} = require('ink');
-const meow = require('meow');
+const importJsx = require("import-jsx");
+const { h, render } = require("ink");
+const meow = require("meow");
 
-const Ui = importJsx('./ui');
+const Ui = importJsx("./ui");
 
 const cli = meow(`
-	Usage
-	  $ cxcloud-cli [input]
+  Usage
+    $ cxcloud-cli [input]
 
-	Options
-	  --name  Lorem ipsum [Default: false]
+  Options
+    --name  Lorem ipsum [Default: false]
 
-	Examples
-	  $ cxcloud-cli
-	  I love Ink
-	  $ cxcloud-cli --name=ponies
-	  I love ponies
+  Examples
+    $ cxcloud-cli
+    I love Ink
+    $ cxcloud-cli --name=ponies
+    I love ponies
 `);
 
 render(h(Ui, cli.flags));

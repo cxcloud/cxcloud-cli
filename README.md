@@ -6,29 +6,29 @@
 ## Install
 
 ```
-$ npm install --global cxcloud-cli
+$ npm install --global cxcloud
 ```
 
 
 ## Usage
 
 ```js
-$ cxcloud-cli --help
+$ cxcloud --help
 
   Usage
-    cxcloud-cli [input]
+    cxcloud [input]
 
   Options
     --name  Lorem ipsum [Default: false]
 
   Examples
-    $ cxcloud-cli
+    $ cxcloud
     I love Ink
-    $ cxcloud-cli --name=ponies
+    $ cxcloud --name=ponies
     I love ponies
 ```
 
 
 ## License
 
-MIT © [Sallar Kaboli](https://docs.cxcloud.com)
+MIT © [CXCloud](https://docs.cxcloud.com)

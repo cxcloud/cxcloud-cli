@@ -1,12 +1,12 @@
 {
-  "name": "@cxcloud/cli",
+  "name": "cxcloud",
   "version": "1.0.0",
   "description": "CXCloud command line tools",
   "license": "MIT",
   "repository": "cxcloud/cxcloud-cli",
   "author": {
-    "name": "Sallar Kaboli",
-    "email": "sallar.kaboli@gmail.com",
+    "name": "CXCloud",
+    "email": "sallar@cxcloud.com",
     "url": "https://docs.cxcloud.com"
   },
   "bin": "cli.js",

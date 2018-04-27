@@ -1,6 +1,6 @@
 {
-  "name": "cxcloud-cli",
-  "version": "0.0.0",
+  "name": "@cxcloud/cli",
+  "version": "1.0.0",
   "description": "CXCloud command line tools",
   "license": "MIT",
   "repository": "cxcloud/cxcloud-cli",

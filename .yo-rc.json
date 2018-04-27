@@ -1,0 +1,8 @@
+{
+  "generator-ink-cli": {
+    "promptValues": {
+      "githubUsername": "cxcloud",
+      "website": "https://docs.cxcloud.com"
+    }
+  }
+}

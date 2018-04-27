@@ -7,7 +7,7 @@
   "author": {
     "name": "Sallar Kaboli",
     "email": "sallar.kaboli@gmail.com",
-    "url": "docs.cxcloud.com"
+    "url": "https://docs.cxcloud.com"
   },
   "bin": "cli.js",
   "engines": {

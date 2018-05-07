@@ -18,7 +18,7 @@
   },
   "files": [
     "cli.js",
-    "ui.js"
+    "utils.js"
   ],
   "keywords": [
     ""

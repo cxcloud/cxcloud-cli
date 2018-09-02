@@ -3,18 +3,7 @@
 
 const meow = require('meow');
 const { showError } = require('./utils');
-const yeoman = require('yeoman-environment');
-
-// Map cli types to Yeoman types
-const availbleTypes = {
-  microservice: 'app',
-  infra: 'infra'
-};
-
-// Create a Yeoman environment so we can
-// pass our commands to it.
-const env = yeoman.createEnv();
-env.register(require.resolve('generator-cxcloud'));
+const generate = require('./lib/generate');
 
 const cli = meow(`
   Usage
@@ -31,11 +20,12 @@ if (cli.input.length < 2) {
   return cli.showHelp();
 }
 
-const [_, commandStr] = cli.input; // for now we ignore the first argument since it's always `generate`
-const [type, subtype] = commandStr.split(':');
+console.log(cli);
+const [commandType, commandStr] = cli.input;
 
-if (!(type in availbleTypes)) {
-  showError('The specified command does not exist.');
+switch (commandType) {
+  case 'generate':
+    return generate(commandStr);
+  default:
+    showError(`Command '${commandType}' does not exist.`);
 }
-
-env.run(`cxcloud:${availbleTypes[type]}`);

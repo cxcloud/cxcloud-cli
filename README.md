@@ -9,26 +9,6 @@
 $ npm install --global cxcloud
 ```
 
-
-## Usage
-
-```js
-$ cxcloud --help
-
-  Usage
-    cxcloud [input]
-
-  Options
-    --name  Lorem ipsum [Default: false]
-
-  Examples
-    $ cxcloud
-    I love Ink
-    $ cxcloud --name=ponies
-    I love ponies
-```
-
-
 ## License
 
 MIT © [CXCloud](https://docs.cxcloud.com)

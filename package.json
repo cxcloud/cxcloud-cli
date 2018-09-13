@@ -30,6 +30,7 @@
     "generator-cxcloud": "^0.2.0",
     "get-stream": "^4.0.0",
     "inquirer": "^6.2.0",
+    "ora": "^3.0.0",
     "untildify": "^3.0.3",
     "yeoman-environment": "^2.0.6"
   },

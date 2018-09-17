@@ -1,0 +1,85 @@
+apiVersion: kops/v1alpha2
+kind: Cluster
+metadata:
+  creationTimestamp: null
+  name: test.cxcloud.com
+spec:
+  api:
+    dns: {}
+  authorization:
+    rbac: {}
+  channel: stable
+  cloudProvider: aws
+  configBase: s3://myinfratest/test.cxcloud.com
+  etcdClusters:
+  - etcdMembers:
+    - instanceGroup: master-eu-west-1a
+      name: a
+    name: main
+  - etcdMembers:
+    - instanceGroup: master-eu-west-1a
+      name: a
+    name: events
+  iam:
+    allowContainerRegistry: true
+    legacy: false
+  kubernetesApiAccess:
+  - 0.0.0.0/0
+  kubernetesVersion: 1.10.3
+  masterPublicName: api.test.cxcloud.com
+  networkCIDR: 172.20.0.0/16
+  networking:
+    kubenet: {}
+  nonMasqueradeCIDR: 100.64.0.0/10
+  sshAccess:
+  - 0.0.0.0/0
+  subnets:
+  - cidr: 172.20.32.0/19
+    name: eu-west-1a
+    type: Public
+    zone: eu-west-1a
+  topology:
+    dns:
+      type: Public
+    masters: public
+    nodes: public
+
+---
+
+apiVersion: kops/v1alpha2
+kind: InstanceGroup
+metadata:
+  creationTimestamp: null
+  labels:
+    kops.k8s.io/cluster: test.cxcloud.com
+  name: master-eu-west-1a
+spec:
+  image: kope.io/k8s-1.9-debian-jessie-amd64-hvm-ebs-2018-03-11
+  machineType: m3.medium
+  maxSize: 1
+  minSize: 1
+  nodeLabels:
+    kops.k8s.io/instancegroup: master-eu-west-1a
+  role: Master
+  subnets:
+  - eu-west-1a
+
+---
+
+apiVersion: kops/v1alpha2
+kind: InstanceGroup
+metadata:
+  creationTimestamp: null
+  labels:
+    kops.k8s.io/cluster: test.cxcloud.com
+  name: nodes
+spec:
+  image: kope.io/k8s-1.9-debian-jessie-amd64-hvm-ebs-2018-03-11
+  machineType: t2.medium
+  maxSize: 1
+  minSize: 1
+  nodeLabels:
+    kops.k8s.io/instancegroup: nodes
+  role: Node
+  subnets:
+  - eu-west-1a

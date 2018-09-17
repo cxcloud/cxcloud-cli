@@ -15,7 +15,8 @@
   },
   "scripts": {},
   "files": [
-    "lib/*"
+    "lib/*",
+    "templates/*"
   ],
   "keywords": [
     "cxcloud",

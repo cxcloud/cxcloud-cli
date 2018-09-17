@@ -27,6 +27,7 @@
     "chalk": "^2.4.1",
     "commander": "^2.17.1",
     "execa": "^1.0.0",
+    "fs-extra": "^7.0.0",
     "generator-cxcloud": "^0.2.0",
     "get-stream": "^4.0.0",
     "inquirer": "^6.2.0",

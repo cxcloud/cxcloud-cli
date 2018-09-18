@@ -1,6 +1,6 @@
 {
   "name": "cxcloud",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "CXCloud command line tools",
   "license": "MIT",
   "repository": "cxcloud/cxcloud-cli",
@@ -15,7 +15,8 @@
   },
   "scripts": {},
   "files": [
-    "lib/*"
+    "lib/*",
+    "templates/*"
   ],
   "keywords": [
     "cxcloud",
@@ -26,7 +27,13 @@
   "dependencies": {
     "chalk": "^2.4.1",
     "commander": "^2.17.1",
-    "generator-cxcloud": "^0.1.2",
+    "execa": "^1.0.0",
+    "fs-extra": "^7.0.0",
+    "generator-cxcloud": "^0.2.0",
+    "get-stream": "^4.0.0",
+    "inquirer": "^6.2.0",
+    "ora": "^3.0.0",
+    "untildify": "^3.0.3",
     "yeoman-environment": "^2.0.6"
   },
   "devDependencies": {}

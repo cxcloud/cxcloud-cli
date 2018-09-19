@@ -9,7 +9,7 @@
     "email": "sallar@cxcloud.com",
     "url": "https://docs.cxcloud.com"
   },
-  "bin": "lib/cli.js",
+  "bin": "lib/cxcloud.js",
   "engines": {
     "node": ">=6"
   },

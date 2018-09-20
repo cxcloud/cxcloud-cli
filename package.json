@@ -1,6 +1,6 @@
 {
   "name": "cxcloud",
-  "version": "0.3.3",
+  "version": "0.3.7",
   "description": "CXCloud command line tools",
   "license": "MIT",
   "repository": "cxcloud/cxcloud-cli",
@@ -25,6 +25,7 @@
     "code-generator"
   ],
   "dependencies": {
+    "aws-regions": "^1.4.1",
     "chalk": "^2.4.1",
     "commander": "^2.17.1",
     "execa": "^1.0.0",

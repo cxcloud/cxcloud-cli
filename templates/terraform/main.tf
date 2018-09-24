@@ -6,6 +6,6 @@ terraform {
   }
 }
 
-resource "aws_ecr_repository" "<%= clusterDomain %>" {
+resource "aws_ecr_repository" "service" {
   name = "<%= clusterDomain %>"
 }

@@ -26,6 +26,7 @@
   ],
   "dependencies": {
     "aws-regions": "^1.4.1",
+    "boxen": "^2.0.0",
     "chalk": "^2.4.1",
     "commander": "^2.17.1",
     "ejs": "^2.6.1",
@@ -38,6 +39,7 @@
     "joi": "^14.0.6",
     "js-yaml": "^3.12.0",
     "ora": "^3.0.0",
+    "persistent-cache": "^1.1.1",
     "untildify": "^3.0.3",
     "yeoman-environment": "^2.0.6"
   },

@@ -1,6 +1,6 @@
 {
   "name": "cxcloud",
-  "version": "0.12.0",
+  "version": "0.13.0",
   "description": "CXCloud command line tools",
   "license": "MIT",
   "repository": "cxcloud/cxcloud-cli",
@@ -37,11 +37,11 @@
     "glob": "^7.1.3",
     "inquirer": "^6.2.0",
     "joi": "^14.0.6",
-    "js-yaml": "^3.12.0",
+    "js-yaml": "^3.13.0",
     "ora": "^3.0.0",
     "persistent-cache": "^1.1.1",
     "untildify": "^3.0.3",
-    "yeoman-environment": "^2.0.6"
+    "yeoman-environment": "^2.3.4"
   },
   "devDependencies": {}
 }
